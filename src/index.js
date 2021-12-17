@@ -13,7 +13,7 @@ app.use(morgan('combined'));
 app.engine('hbs', handlebars({
   extname:'.hbs'
 }));
-app.set('view engine', 'hbs');
+app.set('view engine', 'hbs'); 
 //cấu hình đường dẫn view 
 app.set('views', path.join(__dirname, 'resources/views'));
 
@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 app.get('/news', (req, res) => {
   res.render('news');
  })
-
+ 
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
