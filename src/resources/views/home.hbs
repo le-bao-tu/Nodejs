@@ -1,1 +1,21 @@
-<h1>Hello xin chào lê bảo tú </h1>
+<div class="mt-4">
+    <div class="row">
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card bg-info "  style="margin-top:10px;height:400px">
+                <a href="/courses/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.image}}" alt="{{this.image}}">
+                </a>
+                <div class="card-body">
+                    <a href="/courses/{{this.slug}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                        
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-outline-danger">Mua Hàng </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
